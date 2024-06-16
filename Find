@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [[ $1 == "string" ]]; then
+	grep -lir "$2" .
+else
+	find . -iname "*"$1"*" 2> /dev/null
+fi
